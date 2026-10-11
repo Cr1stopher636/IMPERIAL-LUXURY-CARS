@@ -1,4 +1,5 @@
 {
     "workbench.activityBar.iconClickBehavior": "focus",
-    "workbench.activityBar.location": "bottom"
+    "workbench.activityBar.location": "bottom",
+    "liveServer.settings.port": 5501
 }
