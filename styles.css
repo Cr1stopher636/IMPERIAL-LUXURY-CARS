@@ -51,19 +51,34 @@
     color: white;
  }
 
- nav {
-    text-align: center;
-    margin: 10px;
-    color: white;
-    padding: 10px;
-
-    transition: all 0.3s ease;
+ header {
+    width: 100%;
+    height: 600px;
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../imagenes/veneno.jpg); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(341, 10%, 45%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/00fondo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
  }
+
+
+
+ nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+ }
+
+
+
 
  a {
     margin: 5px;
-    border-radius: 10px;
-    background-color: rgb(35, 54, 94);
+    border-radius: 20px;
+    background-color: transparent;
     color: white;
     text-decoration: none;
     padding: 10px;
@@ -71,7 +86,7 @@
  }
 
  a:hover {
-    background-color: rgba(0, 0, 0, 0.559);
+    background-color: rgba(255, 0, 0, 0.559);
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
  }
@@ -142,22 +157,25 @@
 
 
  footer {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(342, 8%, 31%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     text-decoration: none;
     margin: 10px;
     text-align: center;
     color: white;
  }
 
+
+
  body {
-    text-align: center;
-    width: 100%;
-    background-size: cover;
-    background-image: url(./public/assets/00fondo.jpg);
-    background-position: center;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    min-width: max-content;
-    display: block;
+    font-family: ´open sans;
  }
 
  /*Fuerza al fondo a expandirse hasta el final del contenido más ancho
@@ -347,10 +365,19 @@
 
 
  .container {
-   background-color: rgb(52, 63, 66);
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-color: rgb(52, 63, 66);
     transition: all 0.3s ease;
-    border: 2px rgb(255, 255, 255) inset;
-    border-radius: 10px;
+    /* border: 2px rgb(255, 255, 255) inset; */
+    border-radius: 60px;
  }
 
  .container img {
@@ -359,16 +386,21 @@
  }
 
 
- .container:hover {
+ /* .container:hover {
     background-color: rgba(0, 0, 0, 0.559);
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
- }
+ } */
+
+ /* 
+ .contenido-texto p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+ } */
 
 
-
-
-
+ /* 
  .primera-tarjeta {
     width: 900px;
     object-fit: cover;
@@ -377,68 +409,97 @@
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
- }
+ } */
 
 
  .segunda-tarjeta {
-    width: 900px;
-    object-fit: cover;
-    align-items: center;
-    margin: 30px auto;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 59%, 70%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
  }
+
 
  .tercera-tarjeta {
-    width: 900px;
-    object-fit: cover;
-    align-items: center;
-    margin: 30px auto;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 59%, 70%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
+    margin: 20px;
  }
 
+
  .cuarta-tarjeta {
-    width: 900px;
-    object-fit: cover;
-    align-items: center;
-    margin: 30px auto;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 59%, 70%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
  }
 
  .quinta-tarjeta {
-    width: 900px;
-    object-fit: cover;
-    align-items: center;
-    margin: 30px auto;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 59%, 70%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
+    margin: 20px;
  }
 
  .sexta-tarjeta {
-    width: 900px;
-    object-fit: cover;
-    align-items: center;
-    margin: 30px auto;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 59%, 70%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
+    margin: 20px;
  }
 
 
  .septima-tarjeta {
-    width: 900px;
-    object-fit: cover;
-    align-items: center;
-    margin: 30px auto;
-    border-radius: 15px;
-    padding: 30px;
-    box-sizing: border-box;
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 59%, 70%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 60px;
+    display: flex;
  }
 
  .imgPremium {
@@ -461,8 +522,9 @@
     align-items: center;
     padding: 5px;
     border-radius: 5px;
-    transition: all 0.3s ease;
  }
+
+
 
 
 
@@ -471,10 +533,17 @@
  }
 
 
- .header-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+
+
+
+ .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
  }
 
 
@@ -509,6 +578,15 @@
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
  }
+
+
+
+ .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
+
 
 
 
@@ -633,6 +711,15 @@
 
 
  #patrocinadores {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(343, 6%, 25%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     max-width: 1200px;
     border: 2px white inset;
     display: flex;

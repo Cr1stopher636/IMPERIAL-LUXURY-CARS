@@ -1,5 +1,7 @@
-const emojis = ['🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥'];
+// EJEMPLO DE LENGTH Y FOREACH
 
-emojis.forEach(items => {
-    console.log(items.length);
-})
+// const emojis = ['🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥'];
+
+// emojis.forEach(items => {
+//     console.log(items.length);
+// })
