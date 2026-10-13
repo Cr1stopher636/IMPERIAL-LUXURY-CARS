@@ -365,19 +365,7 @@
 
 
  .container {
-    background: rgba(235, 208, 173, 0.281);
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    background-color: rgb(52, 63, 66);
-    transition: all 0.3s ease;
-    /* border: 2px rgb(255, 255, 255) inset; */
-    border-radius: 60px;
+  
  }
 
  .container img {
