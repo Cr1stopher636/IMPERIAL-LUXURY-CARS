@@ -6,10 +6,10 @@
 
 const diccionario = ['nombre', 'ricardo', 'edad', 23];
 diccionario.forEach(items => {
-    console.log(items);
+
 })
 
-
+console.log('Este es el diccionrio: --->', diccionario);
 
 
 
