@@ -276,6 +276,11 @@
  }
 
 
+ .imagenes-cuarta-tarjeta {
+   border: 12px rgb(255, 0, 0) solid;
+   flex-direction: row-reverse;
+ }
+
 
 
 
