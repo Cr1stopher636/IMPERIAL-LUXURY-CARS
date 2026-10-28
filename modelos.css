@@ -180,6 +180,20 @@
  }
 
 
+.img-exclusives {
+   display: flex;
+   gap: 16px;
+   text-align: center;
+}
+
+.img-exclusives, img {
+   width: 200px;
+   height: 200px; /* Le das un tamaño uniforme a todas */
+   object-fit: cover; /* Evita que la imagen se deforme o estire */
+   border-radius: 8px; /* Opcional: esquinas suavemente redondeadas */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opcional: da una sombra elegante */
+}
+
 
  /* CONTENEDOR MODELO-PADRE */
  .contenedor-modelo {
