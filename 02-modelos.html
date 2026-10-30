@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="modelos.css">
     <link rel="icon" href="./public/assets/logo-empresa.png">
 </head>
+<body>
 <header class="header-nav">
     <nav>
 
@@ -67,27 +68,57 @@
             <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                 style="stroke: none; fill: #fff;"></path>
         </svg></div>
-    <h3>Nuestros modelos más esclusivos 2026</h3>
-    <p>Este es el contenido de las imagenes de los autos exclusivos de toda la página...</p>
-    <div class="img-exclusives">
-        <img src="/public/assets/exmodels/01zonda.webp" alt="Pagani zonda">
-        <img src="/public/assets/exmodels/02zonda.jpeg" alt="Pagani zonda abierto">
-        <img src="/public/assets/exmodels/03veyron.jpg" alt="Bugatti veyron">
-        <img src="/public/assets/exmodels/04veyron.webp" alt="Bugatti veyron segunda posición">
-        <img src="/public/assets/exmodels/05urus.jpg" alt="Urus performante">
-        <img src="/public/assets/exmodels/06urus.webp" alt="Urus performante segunda posición">
-    </div>
 </header>
 
-<section class="textos-header">
-
-
-</section>
-
-<hr>
-
-<body>
-
+<main class="modelos-main">
+    <section class="modelos-carousel-section">
+        <h3>Nuestros modelos más esclusivos 2026</h3>
+        <p>Este es el contenido de las imagenes de los autos exclusivos de toda la página...</p>
+    <div class="img-exclusives" role="region" aria-roledescription="carrusel"
+        aria-label="Modelos exclusivos" tabindex="0">
+        <button class="carousel-control carousel-prev" type="button" aria-label="Ver modelo anterior">
+            <span aria-hidden="true">&#10094;</span>
+        </button>
+        <div class="carousel-track" aria-live="polite">
+            <figure class="carousel-slide is-active">
+                <img src="./public/assets/exmodels/01zonda.webp" alt="Pagani Zonda">
+                <figcaption>Pagani Zonda</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+                <img src="./public/assets/exmodels/02zonda.jpeg" alt="Pagani Zonda en vista abierta">
+                <figcaption>Pagani Zonda</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+                <img src="./public/assets/exmodels/03veyron.jpg" alt="Bugatti Veyron">
+                <figcaption>Bugatti Veyron</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+                <img src="./public/assets/exmodels/04veyron.webp" alt="Bugatti Veyron en otra vista">
+                <figcaption>Bugatti Veyron</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+                <img src="./public/assets/exmodels/05urus.jpg" alt="Lamborghini Urus Performante">
+                <figcaption>Lamborghini Urus Performante</figcaption>
+            </figure>
+            <figure class="carousel-slide">
+                <img src="./public/assets/exmodels/06urus.webp" alt="Lamborghini Urus Performante en otra vista">
+                <figcaption>Lamborghini Urus Performante</figcaption>
+            </figure>
+        </div>
+        <button class="carousel-control carousel-next" type="button" aria-label="Ver modelo siguiente">
+            <span aria-hidden="true">&#10095;</span>
+        </button>
+        <div class="carousel-indicators" aria-label="Seleccionar modelo">
+            <button type="button" class="is-active" aria-label="Mostrar foto 1" aria-current="true"></button>
+            <button type="button" aria-label="Mostrar foto 2"></button>
+            <button type="button" aria-label="Mostrar foto 3"></button>
+            <button type="button" aria-label="Mostrar foto 4"></button>
+            <button type="button" aria-label="Mostrar foto 5"></button>
+            <button type="button" aria-label="Mostrar foto 6"></button>
+        </div>
+    </div>
+    </section>
+</main>
 
     <!-- <section class="contenedor-bloques"> -->
 
@@ -154,7 +185,7 @@
 
 
     <!-- <a href="mailto: ricardo0640@outlook.com"> -->
-    <footer>Contáctame Aquí</footer>
+
     <!-- </a> -->
 
 
@@ -163,6 +194,8 @@
 
 
 
+  <!-- <footer>Contáctame Aquí</footer> -->
+<script src="modelos-carousel.js"></script>
 </body>
 
 </html>

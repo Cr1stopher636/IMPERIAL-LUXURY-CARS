@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="configurador.css">
     <link rel="icon" href="./public/assets/logo-empresa.png">
-    <title>Registro imperial</title>
+    <title>Configurador | Imperial Luxury Cars</title>
 </head>
 
+<body class="config-page">
 <header class="header-nav">
     <nav class="barra-navegador">
         <a target="_blank" href="01-index.html">
@@ -59,35 +60,109 @@
             <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
                 style="stroke: none; fill: #fff;"></path>
         </svg></div>
-    <h3>Configurador</h3>
+    <section class="textos-header">
+        <p class="eyebrow">TU AUTO, A TU MANERA</p>
+        <h1>Configurador de autos</h1>
+        <p>Elige uno de nuestros modelos y crea una combinación a tu gusto.</p>
+    </section>
 </header>
 
-<section class="textos-header">
-    <h1 class="animate__animated animate__bounce">Imperial Luxury Cars</h1>
-    <h2 class="animate__heartBeat">¡El configurador!</h2>
-</section>
+<main class="configurator-main">
+    <form class="configurator-layout" id="car-configurator">
+        <div class="configurator-options">
+            <fieldset class="config-card model-selection">
+                <legend><span>01</span> Elige tu modelo</legend>
+                <div class="model-grid">
+                    <label class="model-option" data-model-name="Porsche 911"
+                        data-price-display="Cotizar con distribuidor"
+                        data-image="./public/assets/19-911.jpg">
+                        <input type="radio" name="modelo" value="porsche-911" checked>
+                        <img src="./public/assets/19-911.jpg" alt="Porsche 911">
+                        <span class="model-name">Porsche 911</span>
+                        <span class="model-type">Deportivo</span>
+                        <span class="model-price">Precio oficial en MXN: cotización</span>
+                    </label>
+                    <label class="model-option" data-model-name="Bentley Continental GT"
+                        data-price-display="Cotizar con distribuidor"
+                        data-image="./public/assets/04-continental.jpg">
+                        <input type="radio" name="modelo" value="bentley-continental">
+                        <img src="./public/assets/04-continental.jpg" alt="Bentley Continental GT">
+                        <span class="model-name">Bentley Continental GT</span>
+                        <span class="model-type">Gran turismo</span>
+                        <span class="model-price">Precio oficial en MXN: cotización</span>
+                    </label>
+                    <label class="model-option" data-model-name="Range Rover SV"
+                        data-price-display="Cotizar con distribuidor"
+                        data-image="./public/assets/02-rover.webp">
+                        <input type="radio" name="modelo" value="range-rover-sv">
+                        <img src="./public/assets/02-rover.webp" alt="Range Rover SV">
+                        <span class="model-name">Range Rover SV</span>
+                        <span class="model-type">SUV de lujo</span>
+                        <span class="model-price">Precio oficial en MXN: cotización</span>
+                    </label>
+                    <label class="model-option" data-model-name="Pagani Utopia Roadster"
+                        data-price-display="Cotización privada"
+                        data-image="./public/assets/07-utopia.jpg">
+                        <input type="radio" name="modelo" value="pagani-utopia">
+                        <img src="./public/assets/07-utopia.jpg" alt="Pagani Utopia Roadster">
+                        <span class="model-name">Pagani Utopia Roadster</span>
+                        <span class="model-type">Superdeportivo</span>
+                        <span class="model-price">Precio en MXN: cotización privada</span>
+                    </label>
+                </div>
+            </fieldset>
 
-<hr>
+            <fieldset class="config-card">
+                <legend><span>02</span> Exterior</legend>
+                <label class="config-field" for="exterior">Color de carrocería</label>
+                <select id="exterior" name="exterior">
+                    <option value="Gris titanio">Gris titanio</option>
+                    <option value="Negro obsidiana">Negro obsidiana</option>
+                    <option value="Blanco perla">Blanco perla</option>
+                    <option value="Rojo burdeos">Rojo burdeos</option>
+                </select>
+                <p class="config-hint">Los colores son una referencia para tu solicitud; la imagen muestra el modelo disponible.</p>
+            </fieldset>
 
-<body>
+            <fieldset class="config-card">
+                <legend><span>03</span> Interior</legend>
+                <label class="config-field" for="interior">Tapicería</label>
+                <select id="interior" name="interior">
+                    <option value="Cuero negro">Cuero negro</option>
+                    <option value="Cuero color coñac">Cuero color coñac</option>
+                    <option value="Cuero color crema">Cuero color crema</option>
+                </select>
+            </fieldset>
 
+            <fieldset class="config-card">
+                <legend><span>04</span> Equipamiento</legend>
+                <div class="extras-list">
+                    <label><input type="checkbox" name="extras" value="Paquete de viaje"> Paquete de viaje</label>
+                    <label><input type="checkbox" name="extras" value="Asistencia personalizada"> Asistencia personalizada</label>
+                    <label><input type="checkbox" name="extras" value="Protección premium"> Protección premium</label>
+                </div>
+            </fieldset>
+        </div>
 
-    <div class="primera-tarjeta">
-        <img src="/public/assets/19-911.jpg" alt="porsche 911" class="imgPremium">
-        <i class="fa-solid fa-car">
-    </div>
-    <div class="segunda-tarjeta">
-        <img src="/public/assets/04-continental.jpg" alt="continental" class="imgPremium">
-        <i class="fa-solid fa-car">
-    </div>
-    <div class="tercera-tarjeta">
-        <img src="/public/assets/02-rover.webp" alt="Range rover SV" class="imgPremium">
-        <i class="fa-solid fa-car">
-    </div>
-    <div class="tercera-tarjeta">
-        <img src="/public/assets/07-utopia.jpg" alt="Pagani utopia roadster" class="imgPremium">
-        <i class="fa-solid fa-car">
-    </div>
+        <aside class="config-summary" aria-labelledby="summary-title" aria-live="polite">
+            <p class="eyebrow">TU SELECCIÓN</p>
+            <h2 id="summary-title">Resumen de configuración</h2>
+            <img class="summary-image" src="./public/assets/19-911.jpg" alt="Porsche 911 seleccionado">
+            <dl>
+                <div><dt>Modelo</dt><dd id="summary-model">Porsche 911</dd></div>
+                <div><dt>Precio oficial en MXN</dt><dd id="summary-price">Cotizar con distribuidor</dd></div>
+                <div><dt>Exterior</dt><dd id="summary-exterior">Gris titanio</dd></div>
+                <div><dt>Interior</dt><dd id="summary-interior">Cuero negro</dd></div>
+                <div class="summary-extras-row"><dt>Equipamiento</dt><dd id="summary-extras">Sin extras</dd></div>
+            </dl>
+            <p class="summary-note">No mostramos importes estimados como oficiales. El precio final y la disponibilidad dependen de la versión y deben confirmarse con un asesor.</p>
+            <a class="summary-contact" href="03-contacto.html">Solicitar asesoría</a>
+        </aside>
+    </form>
+</main>
+
+<footer class="config-footer">Imperial Luxury Cars · Configuración personalizada</footer>
+<script src="configurador.js"></script>
 </body>
 
 </html>

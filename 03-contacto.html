@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ricardo Yañez"> <!--Autor-->
     <meta name="copyright" content="luxury cars"> <!-- Propietario del copyright-->
-    <title>Perfil imperial</title>
+    <title>Contacto | Imperial Luxury Cars</title>
     <link rel="stylesheet" href="contacto.css">
     <link rel="icon" href="./public/assets/logo-empresa.png">
 </head>
+<body class="contact-page">
 <header class="header-nav">
     <nav class="barra-navegador">
 
@@ -61,65 +62,52 @@
                 style="stroke: none; fill: #fff;"></path>
         </svg></div>
 
-    <div class="formulario-contacto">
-        <h3>Formulario de Contacto</h3>
-        <form action="/04-bandejaContacto.html" method="post">
-
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input value="Ben" id="nombre" name="salida1" placeholder="Nombre" required>
-            </div>
-
-
-            <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <input value="Smith" id="apellido" name="salida2" placeholder="Apellido" required>
-            </div>
-
-
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="salida5" placeholder="email" required>
-            </div>
-
-            <br>
-            <button type="submit" id="button-send">Enviar</button>
-
-        </form>
-    </div>
 </header>
 
+<main class="contact-main">
+    <section class="contact-intro">
+        <p class="eyebrow">ATENCIÓN PERSONALIZADA</p>
+        <h1>Hablemos de tu próximo auto</h1>
+        <p>Déjanos tus datos y nuestro equipo se pondrá en contacto contigo.</p>
+    </section>
 
+    <section class="formulario-contacto" aria-labelledby="contact-title">
+        <h2 id="contact-title">Formulario de contacto</h2>
+        <form action="/04-bandejaContacto.html" method="post">
+            <div class="contact-fields">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="salida1" autocomplete="given-name"
+                        placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="salida2" autocomplete="family-name"
+                        placeholder="Tu apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="salida5" autocomplete="email"
+                        placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono <span>(opcional)</span></label>
+                    <input type="tel" id="telefono" name="telefono" autocomplete="tel"
+                        placeholder="+52 55 0000 0000">
+                </div>
+                <div class="form-group form-group-wide">
+                    <label for="mensaje">¿En qué podemos ayudarte?</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"
+                        placeholder="Cuéntanos qué modelo te interesa o qué información necesitas." required></textarea>
+                </div>
+            </div>
+            <button type="submit" id="button-send">Enviar mensaje</button>
+            <p class="form-note">Tus datos se utilizarán únicamente para responder a tu consulta.</p>
+        </form>
+    </section>
+</main>
 
-
-
-
-<!-- <label for="comentarios">Comentarios</label>
-                <textarea cols="50" rows="10" id="comentarios" name="comentarios" placeholder="Escribe tus comentarios"
-                    required></textarea>
-           -->
-
-
-
-<section class="textos-header">
-    <h1 class="animate__animated animate__bounce">Imperial Luxury Cars</h1>
-    <h2 class="animate__heartBeat">¡Algún contacto!</h2>
-</section>
-
-<hr>
-
-<body>
-
-    <script src="http3.js"></script>
-
-
-    <!-- <div id="respuesta-servidor"></div> -->
-
-    <!-- <button type="button">Enviar</button> -->
-    <!-- <button type="reset">Enviar</button> -->
-
-
-    <footer>Imperial Luxury Cars Copyright 2026</footer>
+<footer>Imperial Luxury Cars · Atención personalizada</footer>
 </body>
 
 </html>
