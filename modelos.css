@@ -189,6 +189,14 @@
     padding: 24px clamp(16px, 4vw, 50px) 0;
  }
 
+ header > nav img {
+    flex: 0 0 auto;
+    width: clamp(72px, 12vw, 128px);
+    height: auto;
+    margin: 0 auto 0 0;
+    padding: 0;
+ }
+
  header > nav a {
     display: inline-flex;
     align-items: center;
@@ -415,6 +423,10 @@
        padding: 14px 12px 0;
     }
 
+    header > nav img {
+       width: clamp(60px, 19vw, 76px);
+    }
+
     header > nav a {
        min-width: 40px;
        min-height: 44px;
@@ -429,6 +441,8 @@
     header .textos-header {
        top: 40%;
     }
+
+    
 
     .modelos-carousel-section {
        width: calc(100% - 24px);
