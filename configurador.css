@@ -204,6 +204,14 @@
      padding: 24px clamp(16px, 4vw, 50px) 0;
   }
 
+  .config-page .barra-navegador img {
+     flex: 0 0 auto;
+     width: clamp(72px, 12vw, 128px);
+     height: auto;
+     margin: 0 auto 0 0;
+     padding: 0;
+  }
+
   .config-page .barra-navegador a {
      display: inline-flex;
      min-width: 44px;
@@ -531,6 +539,10 @@
      .config-page .barra-navegador {
         gap: 2px;
         padding: 14px 12px 0;
+     }
+
+     .config-page .barra-navegador img {
+        width: clamp(60px, 19vw, 76px);
      }
 
      .config-page .barra-navegador a {
