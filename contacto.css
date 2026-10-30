@@ -203,9 +203,18 @@
 
  .contact-page .barra-navegador {
    display: flex;
+   align-items: center;
    justify-content: flex-end;
    gap: clamp(4px, 1vw, 14px);
    padding: 24px clamp(16px, 4vw, 50px) 0;
+ }
+
+ .contact-page .barra-navegador img {
+   flex: 0 0 auto;
+   width: clamp(72px, 12vw, 128px);
+   height: auto;
+   margin: 0 auto 0 0;
+   padding: 0;
  }
 
  .contact-page .barra-navegador a {
@@ -392,6 +401,10 @@
      padding: 14px 12px 0;
    }
 
+   .contact-page .barra-navegador img {
+     width: clamp(60px, 19vw, 76px);
+   }
+
    .contact-page .barra-navegador a {
      min-width: 40px;
      min-height: 44px;
@@ -425,4 +438,3 @@
      width: 100%;
    }
  }
-
