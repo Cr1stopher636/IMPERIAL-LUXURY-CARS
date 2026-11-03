@@ -65,8 +65,20 @@
             <p>Revise en su bandeja o correo no deseado.</p>
         </strong>
     </div>
-
-
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+    const datosGuardados = JSON.parse(localStorage.getItem('configuracionAuto'));
+    
+    if (datosGuardados) {
+        console.log("Modelo recibido:", datosGuardados.modelo);
+        console.log("Exterior:", datosGuardados.exterior);
+        console.log("Interior:", datosGuardados.interior);
+        console.log("Extras:", datosGuardados.extras);
+        
+        // Aquí puedes inyectar estos valores en el HTML de tu bandeja de contacto
+    }
+});
+    </script>
 </body> 
 
 </html>
