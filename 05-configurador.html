@@ -70,7 +70,7 @@
 </header>
 
 <main class="configurator-main">
-    <form class="configurator-layout" id="car-configurator">
+    <form class="configurator-layout" id="car-configurator" action="/04-bandejaContacto.html" method="post">
         <div class="configurator-options">
             <fieldset class="config-card model-selection">
                 <legend><span>01</span> Elige tu modelo</legend>
@@ -158,13 +158,28 @@
                 <div class="summary-extras-row"><dt>Equipamiento</dt><dd id="summary-extras">Sin extras</dd></div>
             </dl>
             <p class="summary-note">No mostramos importes estimados como oficiales. El precio final y la disponibilidad dependen de la versión y deben confirmarse con un asesor.</p>
-            <a class="summary-contact" href="03-contacto.html">Solicitar asesoría</a>
+            <button type="button" id="summary-contact-btn">Solicitar asesoría</button>
         </aside>
     </form>
 </main>
 
 <footer class="config-footer">Imperial Luxury Cars · Configuración personalizada</footer>
-<script src="configurador.js"></script>
+<script src="configurador.js">
+    document.getElementById('car-configurator').addEventListener('submit', function(e) {
+    // Si quieres manejarlo todo con JS, puedes prevenir el envío por defecto si gustas, 
+    // o dejar que recolecte los datos:
+    
+    const formData = {
+        modelo: document.querySelector('input[name="modelo"]:checked').closest('.model-option').dataset.modelName,
+        exterior: document.getElementById('exterior').value,
+        interior: document.getElementById('interior').value,
+        extras: Array.from(document.querySelectorAll('input[name="extras"]:checked')).map(el => el.value)
+    };
+
+    // Guardamos los datos en el navegador para leerlos en la bandeja
+    localStorage.setItem('configuracionAuto', JSON.stringify(formData));
+});
+</script>
 </body>
 
 </html>
