@@ -488,7 +488,7 @@
      text-align: left;
   }
 
-  .summary-contact {
+  #summary-contact-btn {
      display: flex;
      min-height: 48px;
      align-items: center;
