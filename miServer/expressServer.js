@@ -1,19 +1,35 @@
-// const express = require("express");
+const express = require("express");
 
-// const app = express();
+const app = express();
+const PORT = 3000;
 
 // app.use(express.urlencoded({ extended: true}));
 
-// app.get("/", (req, res) => {
-//     res.sendFile(__dirname + "/html/01-index.html" )
-// });
+app.get("/formulario-contacto", (req, res) => {
+    res.set('Content-Type', 'text/plain');
+    res.send('Hola desde express');
+});
 
-// app.post("/formulario", (req, res) => {
-//     console.log(req.body);
 
-//     res.send("Formulario recibido");
-// });
+app.get('/html', (req, res) => {
+    res.send(`<!DOCTYPE>
+        <html>
+        <head>
+            <title>Formulario de contacto</title>
+        </head>
+        <body>
+            <h1>Bienvenido papiRick</h1>
+           
+        </body>
+        </html>`);
+})
 
-// app.listen(3000, () => {
-//     console.log("Servidor en http://localhost:3000");
-// });
+app.post("/formulario", (req, res) => {
+    console.log(req.body);
+
+    res.send("Formulario recibido");
+});
+
+app.listen(PORT, () => {
+    console.log(`http://localhost:${PORT}`);
+});
