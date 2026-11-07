@@ -1,35 +1,35 @@
-const express = require("express");
+import express from 'express';
 
 const app = express();
 const PORT = 3000;
 
-// app.use(express.urlencoded({ extended: true}));
+// ==========================================
+// MIDDLEWARES (¡Obligatorios!)
+// ==========================================
+app.use(express.urlencoded({ extended: true })); // <-- Este lee los datos del formulario HTML
+app.use(express.json());    
+app.use(express.static('.'));                     // Este lee JSON (para Postman o fetch)
 
-app.get("/formulario-contacto", (req, res) => {
-    res.set('Content-Type', 'text/plain');
-    res.send('Hola desde express');
-});
+// ==========================================
+// RUTA DEL FORMULARIO
+// ==========================================
+app.post('/miServer/expressServer.js', (req, res) => {
+    // Como ya cambiamos los "name" en el HTML, esto coincidirá perfectamente
+    // const { nombre, apellido, correo, telefono, mensaje } = req.body;
 
+    // console.log('Datos recibidos del HTML:'); 
+    // console.log('Nombre:', nombre);
+    // console.log('Apellido:', apellido);
+    // console.log('Correo electrónico:', correo);
+    // console.log('Teléfono:', telefono);
+    // console.log('Mensaje:', mensaje);
 
-app.get('/html', (req, res) => {
-    res.send(`<!DOCTYPE>
-        <html>
-        <head>
-            <title>Formulario de contacto</title>
-        </head>
-        <body>
-            <h1>Bienvenido papiRick</h1>
-           
-        </body>
-        </html>`);
-})
+    console.log('Datos recibidos del HTML:', req.body);
+    res.send('¡Formulario recibido! Gracias por contactarnos.');
+    res.redirect('/04-bandejaContacto.html'); // Redirige a la página de contacto después de enviar el formulario
 
-app.post("/formulario", (req, res) => {
-    console.log(req.body);
-
-    res.send("Formulario recibido");
 });
 
 app.listen(PORT, () => {
-    console.log(`http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en: http://localhost:${PORT}`);
 });
