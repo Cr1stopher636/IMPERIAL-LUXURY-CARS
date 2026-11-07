@@ -1,0 +1,15 @@
+$kind: http-request
+name: localhost:3000/
+description: ""
+url: http://localhost:3000/formulario-contacto
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: ""
+scripts:
+  - type: afterResponse
+    code: ""
+    language: text/javascript
+order: 1790100011716
