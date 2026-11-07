@@ -13,7 +13,7 @@ app.use(express.static('.'));                     // Este lee JSON (para Postman
 // ==========================================
 // RUTA DEL FORMULARIO
 // ==========================================
-app.post('/miServer/expressServer.js', (req, res) => {
+app.post('/formulario-contacto', (req, res) => {
     // Como ya cambiamos los "name" en el HTML, esto coincidirá perfectamente
     // const { nombre, apellido, correo, telefono, mensaje } = req.body;
 
