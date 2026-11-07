@@ -1,0 +1,1009 @@
+ * {
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ /* *, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+
+ img {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+ }
+
+ /* .rover-lateral {
+   width: 400px;
+   height: 200px;
+   display: block;
+ } */
+
+
+ h1 {
+    text-align: center;
+    color: white;
+    margin: 15px;
+ }
+
+ h2 {
+    text-align: center;
+    color: white;
+    margin: 15px;
+ }
+
+ h3 {
+    text-align: center;
+    color: white;
+    margin: 15px;
+ }
+
+ p {
+    text-align: center;
+    padding: 15px;
+    color: white;
+ }
+
+ header {
+    width: 100%;
+    height: 600px;
+    background: rgba(96, 89, 79, 0.281);
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../imagenes/veneno.jpg); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(330, 5%, 15%, 0.459), hsla(0, 0%, 0%, 0.295)), url(/public/assets/00fondo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+ }
+
+
+
+ nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+    position: sticky;
+ }
+
+ header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(4px, 1vw, 14px);
+    padding: 24px clamp(16px, 4vw, 50px) 0;
+ }
+
+ header > nav img {
+    float: none;
+    flex: 0 0 auto;
+    width: clamp(72px, 12vw, 128px);
+    height: auto;
+    margin: 0 auto 0 0;
+    padding: 0;
+ }
+
+ header > nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    margin: 0;
+    padding: 8px;
+ }
+
+ header > nav a:focus-visible {
+    outline: 2px solid #d7bd89;
+    outline-offset: 3px;
+ }
+
+ header > nav svg {
+    display: block;
+    flex: 0 0 auto;
+ }
+
+
+
+
+
+
+ a {
+    margin: 5px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+ }
+
+ a:hover {
+    background-color: rgba(255, 0, 0, 0.559);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+ }
+
+
+
+
+
+
+ label {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+ }
+
+
+
+
+
+ textarea {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+ }
+
+
+
+ input {
+    border: 2px rgb(255, 255, 255) inset;
+    background-color: beige;
+    margin: 20px;
+    transition: all 0.3s ease;
+ }
+
+ input:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+ ol {
+    text-align: center;
+    margin: 40px;
+    color: white;
+ }
+
+ table {
+    margin: 10px;
+    color: white;
+ }
+
+ /* table, th, td {
+      border: 1px solid white;
+}
+
+
+ td {
+    padding: 10px;
+ } */
+
+ input {
+    text-align: center;
+    border-radius: 5px;
+
+ }
+
+
+
+ footer {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(342, 8%, 31%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    color: white;
+ }
+
+
+
+ body {
+    font-family: open sans;
+    background: #090b0f;
+    color: #f5f2ec;
+    line-height: 1.6;
+ }
+
+ /*Fuerza al fondo a expandirse hasta el final del contenido más ancho
+
+
+
+ button {
+    width: 100px;
+    height: 35px;
+    margin: 20px;
+
+    background-color: #4caf9ed1;
+    color: white;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+ }
+
+
+
+
+ .texto-resaltado {
+    color: red;
+ }
+
+
+ .tercer-contenedor {
+    display: flex;
+    justify-content: center;
+ }
+
+
+ .first {
+    text-align: center;
+    color: white;
+ }
+
+
+
+
+ /* CONTENEDOR DE ESPECIFICACIONES */
+ .contenedor-especificaciones {
+    width: 300px;
+    position: fixed;
+    top: 10px;
+
+    justify-content: center;
+ }
+
+
+
+ /* ESPECIFICACIONES */
+ .subcontenedor-especificaciones {
+    border: 2px white inset;
+    margin: 20px;
+
+    transition: all 0.3s ease;
+ }
+
+ /* .subcontenedor-especificaciones, img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+ } */
+
+
+ .subcontenedor-especificaciones:hover {
+    background-color: rgba(22, 110, 157, 0.559);
+    transform: translateY(-8px);
+
+ }
+
+
+ .galeria {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+ }
+
+
+
+
+ .contenido-principal {
+    border: 2px white solid;
+    background-color: rgb(74, 103, 128);
+    transition: all 0.3s ease;
+ }
+
+
+
+ .contenido-principal:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 208, 208, 0.3);
+ }
+
+
+ .imagenes-cuarta-tarjeta {
+
+    flex-direction: row-reverse;
+ }
+
+
+
+
+
+
+ /* CONTENEDOR PADRE */
+ .contenedor-bloques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1300px;
+    width: 90%;
+    margin: 0px auto;
+ }
+
+ .models {
+    max-width: 200px;
+ }
+
+
+
+
+ /* CONTENEDOR MODELO-PADRE */
+ .contenedor-modelo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+ }
+
+
+
+ /* CONTENEDOR HIJO */
+ .bloque {
+    background-size: cover;
+    max-width: 300px;
+    margin: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    border: 2px white inset;
+    border-radius: 13px;
+ }
+
+
+
+ .bloque:hover {
+    background-color: rgba(0, 0, 0, 0.559);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ }
+
+
+
+ /* CONTENEDOR PADRE */
+ .contenedor-bloques-index {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 1000px;
+
+
+    /* El ancho estándar actual suele variar entre 1100px y 1400px */
+    width: 90%;
+    /* Deja un pequeño margen de seguridad en pantallas móviles */
+    margin: 0 auto;
+ }
+
+
+
+
+ .imagenes_de_lujo {
+    display: flex;
+ }
+
+
+
+
+ /* CONTENEDO 2HIJO - PADRE */
+
+
+
+ .models:hover {
+    background-color: rgba(22, 110, 157, 0.559);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ }
+
+
+
+ /* .container {
+  
+ } */
+
+ .container img {
+    border-radius: 10px;
+    padding: 10px;
+ }
+
+
+ /* .container:hover {
+    background-color: rgba(0, 0, 0, 0.559);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ } */
+
+ /* 
+ .contenido-texto p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+ } */
+
+
+ /* 
+ .primera-tarjeta {
+    width: 900px;
+    object-fit: cover;
+    align-items: center;
+    margin: 30px auto;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+ } */
+
+
+ .segunda-tarjeta {
+    background: rgba(20, 20, 19, 0.281);
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/00fondo.jpg); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 4%, 20%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/00fondo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+ }
+
+
+ .tercera-tarjeta {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(250, 8%, 29%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/00fondo.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 1%, 14%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/00fondo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+ }
+
+
+ .cuarta-tarjeta {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 5%, 24%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+ }
+
+ .quinta-tarjeta {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(345, 4%, 18%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+ }
+
+ .sexta-tarjeta {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(348, 5%, 20%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+ }
+
+
+ .septima-tarjeta {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 4%, 14%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+ }
+
+ .imgPremium {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ .imgPremium:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ }
+
+ .barra-navegador {
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+ }
+
+
+
+
+
+
+ #body-contact {
+    width: 100%;
+    background-size: cover;
+    background-image: url(./public/assets/00fondo-bandeja.jpg);
+    background-position: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    min-width: max-content;
+    display: block;
+ }
+
+
+ .contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.399);
+    border: 2px rgb(0, 0, 0) inset;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+ }
+
+ .contact-container:hover {
+    background-color: rgba(0, 0, 0, 0.399);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ }
+
+
+
+ .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
+
+
+
+
+
+
+ #button-send {
+
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+
+    background-color: #4caf9ed1;
+    color: white;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+ }
+
+ #comentarios {
+    width: 266px;
+    display: flex;
+
+ }
+
+
+ #escalade {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+ }
+
+
+
+ #escalade:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ }
+
+
+ #darkhorse {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+ }
+
+ #darkhorse:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+ #porsche911 {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+ }
+
+ #porsche911:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+
+ #ferrari {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ #ferrari:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+ #utopia {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ #utopia:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+
+ #rover {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+
+ }
+
+ #rover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+
+ }
+
+
+ #patrocinadores {
+    background: rgba(235, 208, 173, 0.281);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(249, 47%, 77%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/public/assets/fondo-720s.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(343, 6%, 25%, 0.459), hsla(44, 69%, 65%, 0.295)), url(/public/assets/fondo-720s.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    max-width: 1200px;
+    border: 2px white inset;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+
+    margin: 10px auto;
+ }
+
+ #patrocinadores img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 10px;
+
+    transition: all 0.3s ease;
+ }
+
+ #patrocinadores img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+ }
+
+ .segunda-tarjeta,
+ .tercera-tarjeta,
+ .cuarta-tarjeta,
+ .quinta-tarjeta,
+ .sexta-tarjeta,
+ .septima-tarjeta {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(16px, 2.5vw, 32px);
+    max-width: 1280px;
+    margin: 28px auto;
+    padding: clamp(20px, 4vw, 44px);
+    border: 1px solid rgba(201, 169, 110, 0.28);
+    border-radius: 24px;
+    background: linear-gradient(145deg, #191b20, #101114);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+ }
+
+ .segunda-tarjeta:hover,
+ .tercera-tarjeta:hover,
+ .cuarta-tarjeta:hover,
+ .quinta-tarjeta:hover,
+ .sexta-tarjeta:hover,
+ .septima-tarjeta:hover {
+    transform: translateY(-4px);
+    border-color: rgba(201, 169, 110, 0.6);
+    box-shadow: 0 24px 55px rgba(0, 0, 0, 0.42);
+ }
+
+ main .container {
+    grid-column: 1;
+ }
+
+ main .container h3 {
+    margin: 0 0 14px;
+    color: #d7bd89;
+    font-size: clamp(1.25rem, 2vw, 1.8rem);
+    letter-spacing: 0.04em;
+    text-align: left;
+ }
+
+ main .container p {
+    padding: 0;
+    color: #d0d0d0;
+    line-height: 1.8;
+    text-align: left;
+ }
+
+ main .auto-imagen,
+ main .imagenes-cuarta-tarjeta img {
+    width: 100%;
+    max-width: none;
+    height: clamp(190px, 24vw, 300px);
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+ }
+
+ main .auto-imagen:hover,
+ main .imagenes-cuarta-tarjeta img:hover {
+    transform: scale(1.025);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.45);
+ }
+
+ main .imagenes-cuarta-tarjeta {
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(12px, 2vw, 24px);
+ }
+
+ #patrocinadores {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 28px;
+    border-color: rgba(201, 169, 110, 0.28);
+    background: linear-gradient(145deg, #191b20, #101114);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+ }
+
+ #patrocinadores h3 {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #d7bd89;
+ }
+
+ #patrocinadores img {
+    width: 100%;
+    height: 190px;
+    margin: 0;
+    border-radius: 14px;
+    object-fit: cover;
+ }
+
+ @media (max-width: 800px) {
+
+    .segunda-tarjeta,
+    .tercera-tarjeta,
+    .cuarta-tarjeta,
+    .quinta-tarjeta,
+    .sexta-tarjeta,
+    .septima-tarjeta {
+       grid-template-columns: repeat(2, minmax(0, 1fr));
+       margin: 20px 14px;
+    }
+
+    main .container,
+    main .imagenes-cuarta-tarjeta {
+       grid-column: 1 / -1;
+    }
+
+    main .auto-imagen {
+       height: clamp(180px, 32vw, 260px);
+    }
+ }
+
+ @media (max-width: 520px) {
+    *,
+    *::before,
+    *::after {
+       box-sizing: border-box;
+    }
+
+    header {
+       height: 520px;
+       min-height: 0;
+       background-attachment: scroll;
+       background-position: center;
+    }
+
+    header .wave {
+       height: 90px !important;
+    }
+
+    header > nav {
+       gap: 2px;
+       padding: 14px 12px 0;
+    }
+
+    header > nav img {
+       width: clamp(60px, 19vw, 76px);
+    }
+
+    header > nav a {
+       min-width: 40px;
+       min-height: 44px;
+       padding: 6px;
+    }
+
+    header > nav svg {
+       width: 22px;
+       height: 22px;
+    }
+
+    header .textos-header {
+       position: absolute;
+       top: 43%;
+       width: 100%;
+       padding: 0 18px;
+    }
+
+    header .textos-header h1 {
+       margin: 0 0 12px;
+       font-size: clamp(1.65rem, 8vw, 2.3rem);
+       line-height: 1.15;
+       letter-spacing: 0.03em;
+    }
+
+    header .textos-header h2 {
+       margin: 0;
+       font-size: clamp(1rem, 4.5vw, 1.3rem);
+    }
+
+    .segunda-tarjeta,
+    .tercera-tarjeta,
+    .cuarta-tarjeta,
+    .quinta-tarjeta,
+    .sexta-tarjeta,
+    .septima-tarjeta {
+       grid-template-columns: minmax(0, 1fr);
+       gap: 16px;
+       margin: 18px 12px;
+       padding: clamp(16px, 5vw, 22px);
+    }
+
+    main .container,
+    main .auto-imagen,
+    main .imagenes-cuarta-tarjeta {
+       grid-column: 1 / -1;
+    }
+
+    main .auto-imagen,
+    main .imagenes-cuarta-tarjeta img {
+       height: clamp(190px, 58vw, 250px);
+    }
+
+    main .imagenes-cuarta-tarjeta {
+       grid-template-columns: minmax(0, 1fr);
+    }
+
+    #patrocinadores {
+       grid-template-columns: 1fr;
+       margin: 20px 14px;
+       padding: 20px;
+    }
+
+    #patrocinadores img {
+       height: 200px;
+    }
+
+    .contenedor-footer {
+       width: 100%;
+       flex-direction: column;
+       gap: 18px;
+       padding-bottom: 24px;
+    }
+}
