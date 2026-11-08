@@ -13,16 +13,17 @@ app.use(express.static('IMPERIAL-LUXURY-CARS'));                     // Este lee
 // ==========================================
 // RUTA DEL FORMULARIO
 // ==========================================
-app.post('/formulario-contacto', (req, res) => {
-    // Como ya cambiamos los "name" en el HTML, esto coincidirá perfectamente
-    // const { nombre, apellido, correo, telefono, mensaje } = req.body;
+// app.post('/formulario-contacto', (req, res) => {
+//     // Como ya cambiamos los "name" en el HTML, esto coincidirá perfectamente
+//     const { nombre, apellido, correo, telefono, mensaje } = req.body;
+//     console.log('\n');
 
-    // console.log('Datos recibidos del HTML:'); 
-    // console.log('Nombre:', nombre);
-    // console.log('Apellido:', apellido);
-    // console.log('Correo electrónico:', correo);
-    // console.log('Teléfono:', telefono);
-    // console.log('Mensaje:', mensaje);
+//     console.log('Datos recibidos del HTML:'); 
+//     console.log('Nombre:', nombre);
+//     console.log('Apellido:', apellido);
+//     console.log('Correo electrónico:', correo);
+//     console.log('Teléfono:', telefono);
+//     console.log('Mensaje:', mensaje);
 
     console.log('Datos recibidos del HTML:', req.body);
     res.send('¡Formulario recibido! Gracias por contactarnos.');
