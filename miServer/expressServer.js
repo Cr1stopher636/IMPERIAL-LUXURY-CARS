@@ -8,7 +8,7 @@ const PORT = 3000;
 // ==========================================
 app.use(express.urlencoded({ extended: true })); // <-- Este lee los datos del formulario HTML
 app.use(express.json());    
-app.use(express.static('.'));                     // Este lee JSON (para Postman o fetch)
+app.use(express.static('IMPERIAL-LUXURY-CARS'));                     // Este lee JSON (para Postman o fetch)
 
 // ==========================================
 // RUTA DEL FORMULARIO
