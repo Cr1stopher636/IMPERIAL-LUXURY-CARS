@@ -40,12 +40,10 @@ app.post('/form-configurator', (req, res) => {
     console.log('Extras:', extras);
 
  
-    res.redirect(303, '/form-configurator'); // Redirige a la página de agradecimiento
+    res.redirect(303, '/IMPERIAL-LUXURY-CARS/04-bandejaContacto.html'); // Redirige a la página de agradecimiento
 });
 
-app.get('/form-configurator', (req, res) => {
-    res.sendFile('/IMPERIAL-LUXURY-CARS/05-configurador.html');
-});
+
 
 
 app.listen(PORT, () => {
