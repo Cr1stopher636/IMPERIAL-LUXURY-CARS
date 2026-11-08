@@ -550,7 +550,7 @@
  #body-contact {
     width: 100%;
     background-size: cover;
-    background-image: url(./public/assets/00fondo-bandeja.jpg);
+    background-image: url(/public/assets/00fondo-bandeja.jpg);
     background-position: center;
     min-height: 100vh;
     background-repeat: no-repeat;
