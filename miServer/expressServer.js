@@ -25,11 +25,28 @@ app.use(express.static('IMPERIAL-LUXURY-CARS'));                     // Este lee
 //     console.log('Teléfono:', telefono);
 //     console.log('Mensaje:', mensaje);
 
-    console.log('Datos recibidos del HTML:', req.body);
-    res.send('¡Formulario recibido! Gracias por contactarnos.');
-    res.redirect('/04-bandejaContacto.html'); // Redirige a la página de contacto después de enviar el formulario
+//     // console.log('Datos recibidos del HTML:', req.body);
+//     res.send('¡Formulario recibido! Gracias por contactarnos.');
+// });
 
+app.post('/form-configurator', (req, res) => {
+    const { modelo, exterior, interior, extras } = req.body;
+
+    console.log('\n');
+
+    console.log('Modelo:', modelo);
+    console.log('Exterior:', exterior);
+    console.log('Interior:', interior);
+    console.log('Extras:', extras);
+
+ 
+    res.redirect(303, '/form-configurator'); // Redirige a la página de agradecimiento
 });
+
+app.get('/form-configurator', (req, res) => {
+    res.sendFile('/IMPERIAL-LUXURY-CARS/05-configurador.html');
+});
+
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en: http://localhost:${PORT}`);
