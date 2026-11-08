@@ -39,8 +39,8 @@ app.post('/form-configurator', (req, res) => {
     console.log('Interior:', interior);
     console.log('Extras:', extras);
 
- 
-    res.redirect(303, '/IMPERIAL-LUXURY-CARS/04-bandejaContacto.html'); // Redirige a la página de agradecimiento
+    res.send('Gracias por enviar el formulario en breve nos comunicaremos contigo.');
+     // Redirige a la página de agradecimiento
 });
 
 
