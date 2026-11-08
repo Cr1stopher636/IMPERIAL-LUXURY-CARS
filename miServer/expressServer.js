@@ -24,7 +24,7 @@ app.use(express.static('IMPERIAL-LUXURY-CARS'));                     // Este lee
 //     console.log('Correo electrónico:', correo);
 //     console.log('Teléfono:', telefono);
 //     console.log('Mensaje:', mensaje);
-
+    
 //     // console.log('Datos recibidos del HTML:', req.body);
 //     res.send('¡Formulario recibido! Gracias por contactarnos.');
 // });
@@ -49,5 +49,5 @@ app.get('/form-configurator', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en: http://localhost:${PORT}`);
+    console.log(`http://localhost:${PORT}`);
 });
