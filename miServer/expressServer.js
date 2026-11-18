@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 
 const app = express();
-const PORT = 3000;
+const PORT = 6000;
 
 // ==========================================
 // MIDDLEWARES (¡Obligatorios!)
