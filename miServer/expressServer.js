@@ -20,6 +20,7 @@ app.use(express.static('IMPERIAL-LUXURY-CARS'));// Este lee JSON (para Postman o
 // ==========================================
 // RUTA DEL FORMULARIO
 // ==========================================
+
 app.post('/formulario-contacto', (req, res) => {
     // Como ya cambiamos los "name" en el HTML, esto coincidirá perfectamente
     const { nombre, apellido, correo, telefono, mensaje } = req.body;
@@ -49,9 +50,6 @@ app.post('/form-configurator', (req, res) => {
     res.send('Gracias por enviar el formulario en breve nos comunicaremos contigo.');
      // Redirige a la página de agradecimiento
 });
-
-
-
 
 app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
