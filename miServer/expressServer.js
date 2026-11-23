@@ -20,6 +20,16 @@ app.use(express.static('..'));// Este lee JSON (para Postman o fetch)
 // RUTA DEL FORMULARIO
 // ==========================================
 
+
+app.post('/formulario-login', (req, res) => {
+    const { username, password } = req.body;
+
+    console.log('Usuario:', username);
+    console.log('Contraseña:', password);
+
+    res.sendFile(path.join(__dirname, '..', '01-index.html'));
+});
+
 app.post('/formulario-contacto', (req, res) => {
     // Como ya cambiamos los "name" en el HTML, esto coincidirá perfectamente
     const { nombre, apellido, correo, telefono, mensaje } = req.body;
