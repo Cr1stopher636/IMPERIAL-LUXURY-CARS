@@ -33,7 +33,7 @@ app.post('/formulario-contacto', (req, res) => {
     console.log('Mensaje:', mensaje);
     
     // console.log('Datos recibidos del HTML:', req.body);
-    res.send('¡Formulario recibido! Gracias por contactarnos.');
+    res.sendFile(path.join(__dirname, 'IMPERIAL-LUXURY-CARS', '04-bandeajContacto.html'));
 });
 
 app.post('/form-configurator', (req, res) => {
