@@ -56,7 +56,7 @@ app.post('/form-configurator', (req, res) => {
     console.log('Interior:', interior);
     console.log('Extras:', extras);
 
-    res.send('Gracias por enviar el formulario en breve nos comunicaremos contigo.');
+    res.sendFile(path.join(__dirname, '..', '04-bandejaContacto.html'));
      // Redirige a la página de agradecimiento
 });
 
