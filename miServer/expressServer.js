@@ -43,7 +43,7 @@ app.post('/formulario-contacto', (req, res) => {
     console.log('Mensaje:', mensaje);
     
     // console.log('Datos recibidos del HTML:', req.body);
-    res.sendFile(path.join(__dirname, 'IMPERIAL-LUXURY-CARS', '04-bandeajContacto.html'));
+    res.sendFile(path.join(__dirname, '..', '04-bandejaContacto.html'));
 });
 
 app.post('/form-configurator', (req, res) => {
