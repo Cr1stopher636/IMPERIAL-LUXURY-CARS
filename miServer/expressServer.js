@@ -20,6 +20,17 @@ app.use(express.static('IMPERIAL-LUXURY-CARS'));// Este lee JSON (para Postman o
 // ==========================================
 // RUTA DEL FORMULARIO
 // ==========================================
+
+app.post('/form-login', (req, res) => {
+    const { username, password } = req.body;
+
+    console.log('Modelo:', username);
+    console.log('Exterior:', password);
+  
+    // res.redirect('/01-index.html');
+    res.sendFile(path.join(__dirname, 'IMPERIAL-LUXURY-CARS', '01-index.html'))
+});
+
 app.post('/formulario-contacto', (req, res) => {
     // Como ya cambiamos los "name" en el HTML, esto coincidirá perfectamente
     const { nombre, apellido, correo, telefono, mensaje } = req.body;
