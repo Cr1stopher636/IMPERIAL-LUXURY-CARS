@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.dirname(__filename, 'IMPERIAL-LUXURY-CARS');
 
 
 const app = express();
@@ -33,7 +33,7 @@ app.post('/formulario-contacto', (req, res) => {
     console.log('Mensaje:', mensaje);
     
     // console.log('Datos recibidos del HTML:', req.body);
-    res.send('¡Formulario recibido! Gracias por contactarnos.');
+    res.sendFile(path.join(__dirname, 'IMPERIAL-LUXURY-CARS', '04-bandeajContacto.html'));
 });
 
 app.post('/form-configurator', (req, res) => {
