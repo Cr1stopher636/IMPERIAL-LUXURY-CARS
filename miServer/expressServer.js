@@ -50,7 +50,7 @@ app.post('/form-configurator', (req, res) => {
     const { modelo, exterior, interior, extras } = req.body;
 
     console.log('\n');
-
+     console.log('Datos recibidos del configurador:'); 
     console.log('Modelo:', modelo);
     console.log('Exterior:', exterior);
     console.log('Interior:', interior);
