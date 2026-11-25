@@ -35,7 +35,7 @@ app.post('/formulario-contacto', (req, res) => {
     const { nombre, apellido, correo, telefono, mensaje } = req.body;
     console.log('\n');
 
-    console.log('Datos recibidos del HTML:'); 
+    console.log('Datos recibidos del formulario contacto:'); 
     console.log('Nombre:', nombre);
     console.log('Apellido:', apellido);
     console.log('Correo electrónico:', correo);
